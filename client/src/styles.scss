@@ -14,6 +14,7 @@ body,
   font-family: "Montserrat", sans-serif;
   text-align: center;
   display: flex;
+  justify-content: center;
 
   svg {
     height: 100%;
@@ -32,7 +33,7 @@ body,
 
 .colors-wrap {
   height: 100%;
-  width: 300px;
+  width: 350px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
   ul {
@@ -95,5 +96,47 @@ form {
     color: white;
     padding: 3px 8px;
     margin-top: 16px;
+  }
+}
+.add-color{
+    width: 100%;
+}
+header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgb(4, 37, 80), rgb(7, 83, 88));
+}
+.link{
+  width: 20%;
+  text-decoration: none;
+  border: solid;
+  margin: 5% 2%;
+  padding: 1%;
+  text-align: center;
+  color: white;
+}
+.logging-in{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.login-form{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  input{
+    width: 50%;
+    margin: 2%;
+    font-size: 1.2rem;
+  }
+  button{
+    width: 30%;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px;
   }
 }

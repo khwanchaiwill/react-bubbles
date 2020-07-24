@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 
 import Login from "./components/Login";
 import BubblePage from './components/BubblePage'
@@ -7,8 +7,12 @@ import PrivateRoute from './components/PrivateRoute'
 import "./styles.scss";
 
 function App() {
-  return (
+  return ( 
     <Router>
+      <header>
+        <NavLink className="link" to="/">Login</NavLink>
+        <NavLink className="link" to="/bubble-page">Bubblepage</NavLink>
+      </header>
       <div className="App">
         <Route exact path="/" component={Login} />
         {/* 
